@@ -1,0 +1,292 @@
+#xs{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 400px;
+}
+ .t_two img{
+	width:300px;
+	height: 400px;
+	margin-right: 40px;
+	margin-left: 105px;
+}
+ .t_three img{
+	width:300px;
+	height: 400px;
+	margin-right: 10px;
+	margin-left: 15px;
+	border: orange 2px solid;
+	margin-bottom:20px;
+}
+/*背景色*/
+body{
+background-color: rgba(3,0,255,0.2);
+}
+*{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: fangsong;
+
+	
+}
+header{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+}
+.h_o{
+	border: #333 solid 1px;
+	width:100%;
+	height: 50px;
+	background-color: #fefeee;
+
+}
+header div.h_o>span.h_l{
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	height: 50px;
+	line-height: 35px;
+}
+header div.h_o>span.h_r{
+	position: absolute;
+	right: 35px;
+	top: 10px;
+	height: 50px;
+	line-height: 35px;
+}
+header div.h_o img{
+	margin-top:10px;
+}
+.h_2{
+	position: absolute;
+	right: 0px;
+	margin-top:10px;
+}
+.h_t{
+	border: #333 solid 1px;
+	border-top:none; 
+	width:100%;
+	height: 50px;
+	position: relative;
+}
+.h_t marquee{
+	width:200px;
+	height:50px;
+	position: absolute;
+	left: 50%;
+	margin-left:-100px;
+	font-size: 18px;
+	color: rgba(0,0,255,0.5);
+}
+nav{
+	width: 100%;
+	height: 100px;
+	position:absolute;
+	top:100px;
+
+}
+.n_o{
+	position: absolute;
+	top:0px;
+	width:100%;
+	height: 50px;
+	background-color:#eee;
+}
+.n_o>ul{
+       margin-left:10%;
+}
+.n_o>ul>li{  
+	width:12%;
+	height: 50px;
+	float: left;
+}
+@font-face{
+	font-family: fangsong;
+	src:url('../fonts/fangsong.otf');
+}
+div.n_o>ul>li>a{
+	display: block;
+	width:100%;
+    height: 50px;
+    background-color:#eee;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    /*color: #777;*/
+    font-family: fangsong;
+    font-weight: bold;
+    color: #555;
+}
+div.n_o ul li a:hover{
+	color: #333;
+}
+.n_o>ul>li>ul>li{
+	position: absolute;
+	left: 0px;
+	 width:100%;
+	  height: 50px;
+	  background-color: rgba(3,3,3,0.5);
+	  display: none;
+	  z-index: 100000;
+	}
+	/*banner开始*/
+#banner{
+	width: 100%;
+	height: 400px;
+    position: relative;
+    top: 150px;
+    /*background-color: #00f;*/
+    background-color:rgba(30,100,200,0.1)
+}
+/*多面体的容器CSS开始*/
+/*容器*/
+.container {
+    width: 100%;
+    height: 100%;
+   /* position: absolute;
+    top:0px;
+    */
+    perspective-origin: top;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.cube {
+    position: absolute;
+     /*只能定位*/
+    /*top: 200px;*/
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+    /*旋转的时间*/
+    animation: cubeRotate 40s linear infinite;
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateY(360deg);
+    }
+}
+
+.face {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /*font-family: sans-serif;*/
+    /*font-size: 60px;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    background: rgba(0, 0, 0, 0.3);
+}
+.face>li>img{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border: #fd0 1px solid;
+	opacity: 0.95;
+}
+/*多面体的容器CSS结束*/
+
+section{
+	width:1000px;
+	height: 000px;
+	position:absolute;
+	top:550px;
+	left:50%;
+	margin-left: -500px;
+}
+.title{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: dashed 1px #bbb; 
+	width:1000px;
+	height: 150px;
+	margin-bottom: 10px;
+
+}
+
+video{
+	margin-right: 30px;
+}
+
+#top{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 10000;
+	display: none;
+	opacity: 0.6;
+}
+.sun{
+	display: block;
+}
+
+.sun1{
+	display: none;
+}
+/*#xs{
+	position: relative;
+	top: 0px;
+}*/
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,100,255,0.3);
+	position:absolute;
+	top:2000px;
+	
+}
+footer ul{
+	position: absolute;
+	left: 20px;
+	bottom:0px;
+
+}
+footer ul li{
+       float: left;
+      
+}
+footer ul li a img{
+      width:50px; height: 50px;
+      opacity: 0.4;
+
+}
+footer  marquee{
+	margin-top: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	width:400px;
+	color:purple;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+#video{
+	margin-left: 100px;
+}
+#v_zi{
+	position: absolute;
+	top:300px;
+	left: 500px;
+	width: 200px;
+	height: 500px;
+	padding: 20px 20px;
+	font-size: 20px;
+	color: rgba(255 ,0 ,0 ,0.5); 
+}
